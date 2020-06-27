@@ -25,7 +25,6 @@ code {
   margin-bottom: 10px;
 }
 
-.game {
-  display: flex;
-  flex-direction: row;
-}
+/* .game {
+  width: 500px;
+} */
