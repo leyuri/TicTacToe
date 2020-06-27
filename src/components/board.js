@@ -5,15 +5,23 @@ class Board extends React.Component {
     render() {  //JSX
         return(
         <div>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
-            <Square/>
+            <div className="status">Next player: X</div>
+            <div>
+                <Square/>
+                <Square/>
+                <Square/>
+            </div>
+            <div>
+                <Square/>
+                <Square/>
+                <Square/>
+            </div>
+            <div>
+                <Square/>
+                <Square/>
+                <Square/>
+            </div>
+
         </div>
         )
     }
