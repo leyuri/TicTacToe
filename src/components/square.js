@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Square extends React.Component {
+class Square extends Component {
     //this.props = {value: "1"}
+
     render() {  //JSX
+        const { value } = this.props;
+        this.props.value = 1;
         return(
-            <button className='square'>{this.props.value}</button>
+            <button className='square'>{value}</button>
         )
 
     }

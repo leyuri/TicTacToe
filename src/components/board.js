@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Square from './square';
 
-class Board extends React.Component {
-
+// Component라는 변수에 component 모듈이 받아짐, 이렇게도 많이 사용
+class Board extends Component {
     renderRow(rowNum) {
         return (
             <div>
+                <Square value={rowNum * 3 + 0}/>
                 <Square value={rowNum * 3 + 1}/>
                 <Square value={rowNum * 3 + 2}/>
-                <Square value={rowNum * 3 + 3}/>
             </div>
         )
     }
